@@ -1,4 +1,4 @@
-# Observability
+# Reactive.Observability
 
 Easy tool for watching changes to in-memory data structures, and creating structures which broadcast changes to listeners.
 
@@ -7,7 +7,7 @@ Easy tool for watching changes to in-memory data structures, and creating struct
 When using the `IReactive` interface, any member can be watched on the object. Be that a property, field or method.
 
 ```csharp
-using Observability;
+using Reactive.Observability;
 
 // The key requirement is to implement IReactive, but ReactiveObject provides an baseline implementation of it.
 public class Account : ReactiveObject 
@@ -79,7 +79,7 @@ var src3 = MySource(3);
 Reactive.Observe(() => src1.Value + src2.Value + src3.Value); // This will update when any of the .Values are changed.
 
 // Ternaries / conditionals
-Reactive.Observe(() => ctx.SomeBoolean ? ctx.Value1 : ctx.Value2);
+Reactive.Observe(() => ctx.TryGetValue(out var v) ? v : default);
 
 // Null coalesce
 Reactive.Observe(() => ctx.Value1 ?? ctx.Value2);
@@ -172,7 +172,7 @@ Reactive.Observe(() => {
 While not implemented by the default binder, support for watching static members is available. You will need to create your own `ReactiveProvider` instance and supply it a custom `IReactiveBinder` instance.
 
 ```csharp
-using Observability.Binding;
+using Reactive.Observability.Binding;
 
 var myBinder = new ReactiveBinder(
     new DefaultReactiveBinderItem(),

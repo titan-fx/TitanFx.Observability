@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="Directory.build.props" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="Reactive.Observability.SourceGenerator.Internal/Reactive.Observability.SourceGenerator.Internal.csproj" Id="740616b9-0c54-4598-b84b-c9f0bc5fb124" />
+  <Project Path="Reactive.Observability.UnitTests/Reactive.Observability.UnitTests.csproj" />
+  <Project Path="Reactive.Observability/Reactive.Observability.csproj" />
+</Solution>
