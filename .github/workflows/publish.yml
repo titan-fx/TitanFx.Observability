@@ -18,7 +18,7 @@ jobs:
       - name: Test
         run: dotnet test -c Release --no-build --version ${VERSION}
       - name: Pack
-        run: dotnet pack -c Release --no-build --version ${VERSION}
+        run: dotnet pack -c Release --version ${VERSION}
       - name: NuGet login (OIDC → temp API key)
         uses: NuGet/login@v1
         id: login
