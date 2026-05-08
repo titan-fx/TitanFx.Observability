@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="CodeCoverage.runsettings" />
+    <File Path="Directory.build.props" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="TitanFx.Observability.SourceGenerator.Internal.UnitTests/TitanFx.Observability.SourceGenerator.Internal.UnitTests.csproj" Id="385d64f5-50da-4720-9f61-8ccf4984256e" />
+  <Project Path="TitanFx.Observability.SourceGenerator.Internal/TitanFx.Observability.SourceGenerator.Internal.csproj" Id="740616b9-0c54-4598-b84b-c9f0bc5fb124" />
+  <Project Path="TitanFx.Observability.UnitTests/TitanFx.Observability.UnitTests.csproj" />
+  <Project Path="TitanFx.Observability/TitanFx.Observability.csproj" />
+</Solution>
