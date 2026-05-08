@@ -4,8 +4,8 @@
     <Copyright>Copyright © Danny May</Copyright>
     <NeutralLanguage>en-GB</NeutralLanguage>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <RepositoryUrl>https://github.com/danny-may/Reactive.Observability</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/danny-may/Reactive.Observability</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/danny-may/TitanFx.Observability</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/danny-may/TitanFx.Observability</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>observable reactive INotifyPropertyChanged propertychanged INotifyCollectionChanged expression</PackageTags>
     <Version>$(VersionPrefix)$(VersionSuffix)</Version>
