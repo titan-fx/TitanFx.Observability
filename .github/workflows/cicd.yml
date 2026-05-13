@@ -1,0 +1,17 @@
+on:
+  push:
+    branches:
+      - main
+jobs:
+  ci:
+    name: Run CI checks
+    permissions:
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Build
+        run: dotnet build -c Release --version ${VERSION}
+      - name: Test
+        run: dotnet test -c Release --no-build --version ${VERSION}
