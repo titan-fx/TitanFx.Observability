@@ -3,6 +3,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Description>Easy tool for watching changes to in-memory data structures, and creating structures which broadcast changes to listeners.</Description>
     <IsPackable>True</IsPackable>
   </PropertyGroup>
 
